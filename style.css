@@ -1,0 +1,136 @@
+body {
+  background-color: #ffffff;
+  font-family: "Inter", sans-serif;
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.header {
+  text-align: center;
+  font-size: 50px;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+}
+
+.tabs {
+  display: flex;
+  justify-content: center;
+  margin: 20px auto;
+  width: 80%;
+  background-color: #ddd;
+  border-radius: 5px;
+}
+
+.tab {
+  padding: 10px 20px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  font-size: 18px;
+  width: 33%;
+  border-radius: 5px;
+}
+
+.tab.active {
+  background-color: #000;
+  color: #ffffff;
+}
+
+.product-cards {
+  display: flex;
+  margin-top: 20px;
+
+}
+
+.card {
+  width: 25%;
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
+  margin: 10px;
+  vertical-align: top;
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.badge {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background-color: #ffffff;
+  color: #000000;
+  padding: 5px 10px;
+  font-size: 16px;
+  border-radius: 5px;
+}
+
+.details {
+  padding: 10px;
+}
+
+.title-container {
+  display: flex;
+}
+
+.title {
+  font-size: 20px;
+  margin-bottom: 5px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  flex: 2;
+}
+
+.vendor {
+  font-size: 16px;
+  color: #666666;
+  margin-left: 10px;
+  flex: 1;
+}
+
+.price-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.price {
+  font-weight: bold;
+}
+
+.compare-price {
+  text-decoration: line-through;
+  color: #999999;
+}
+
+.discount {
+  color: #df3307;
+  font-weight: bold;
+}
+
+.add-to-cart {
+  background-color: #000000;
+  color: #ffffff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+  width: 100%;
+}
+
+.icon {
+  height: 15px;
+  padding-right: 5px;
+  display: none;
+}
+
+.active > .icon {
+  display: inline;
+}
